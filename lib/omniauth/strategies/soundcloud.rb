@@ -1,4 +1,4 @@
-require 'omniauth/strategies/oauth2'
+require 'omniauth-oauth2'
 
 module OmniAuth
   module Strategies
@@ -9,8 +9,8 @@ module OmniAuth
 
       option :client_options, {
         :site => 'https://api.soundcloud.com',
-        :authorize_url => '/connect',
-        :token_url => '/oauth2/token'
+        :authorize_url => 'https://api.soundcloud.com/connect',
+        :token_url => 'https://api.soundcloud.com/oauth2/token'
       }
 
       option :access_token_options, {

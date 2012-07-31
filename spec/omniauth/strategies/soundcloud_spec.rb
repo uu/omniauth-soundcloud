@@ -23,11 +23,11 @@ describe OmniAuth::Strategies::SoundCloud do
     end
 
     it 'should have the correct authorization url' do
-      subject.client.options[:authorize_url].should eq("/connect")
+      subject.client.options[:authorize_url].should eq("https://api.soundcloud.com/connect")
     end
 
     it 'should have the correct token url' do
-      subject.client.options[:token_url].should eq('/oauth2/token')
+      subject.client.options[:token_url].should eq('https://api.soundcloud.com/oauth2/token')
     end
   end
 
